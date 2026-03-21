@@ -418,6 +418,40 @@ ruleTester.run("no-useless-assignment", rule, {
         function unsafeFn() {
             throw new Error();
         }`,
+		`function* generator() {
+			let done = false;
+			try {
+				yield 1;
+				done = true;
+			} catch {
+				done = true;
+			} finally {
+				if (!done) {
+				console.log('done is false')
+				}
+			}
+		}
+		const iterator = generator()[Symbol.iterator]();
+		iterator.next();
+		iterator.return();`,
+		`function main() {
+			let outcome = 'unknown';
+
+			try {
+				helper1();
+				outcome = 'success';
+			} catch (err) {
+				helper1();
+				outcome = 'exception'; 
+			} finally {
+				console.log(outcome);
+			}
+		}
+
+		function helper1() {
+			throw Error('helper1');
+		}
+		main();`,
 		`/*eslint test/unknown-ref:1*/
         let a = "used";
 		console.log(a);
