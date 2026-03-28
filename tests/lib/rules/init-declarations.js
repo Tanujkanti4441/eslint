@@ -335,6 +335,120 @@ ruleTester.run("init-declarations", rule, {
 				},
 			],
 		},
+		{
+			code: "let foo = function () {}",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 6 },
+			errors: [
+				{
+					messageId: "notInitialized",
+					data: { idName: "foo" },
+					line: 1,
+					endLine: 1,
+					column: 5,
+					endColumn: 22,
+				},
+			],
+		},
+		{
+			code: "let foo = function () { let bar = 1; }",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 6 },
+			errors: [
+				{
+					messageId: "notInitialized",
+					data: { idName: "foo" },
+					line: 1,
+					endLine: 1,
+					column: 5,
+					endColumn: 22,
+				},
+				{
+					messageId: "notInitialized",
+					data: { idName: "bar" },
+					line: 1,
+					endLine: 1,
+					column: 29,
+					endColumn: 36,
+				},
+			],
+		},
+		{
+			code: "let foo = () => {}",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 6 },
+			errors: [
+				{
+					messageId: "notInitialized",
+					data: { idName: "foo" },
+					line: 1,
+					endLine: 1,
+					column: 5,
+					endColumn: 16,
+				},
+			],
+		},
+		{
+			code: "let foo = () => { let bar = 1;}",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 6 },
+			errors: [
+				{
+					messageId: "notInitialized",
+					data: { idName: "foo" },
+					line: 1,
+					endLine: 1,
+					column: 5,
+					endColumn: 16,
+				},
+				{
+					messageId: "notInitialized",
+					data: { idName: "bar" },
+					line: 1,
+					endLine: 1,
+					column: 23,
+					endColumn: 30,
+				},
+			],
+		},
+		{
+			code: "let foo = class Name {}",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 6 },
+			errors: [
+				{
+					messageId: "notInitialized",
+					data: { idName: "foo" },
+					line: 1,
+					endLine: 1,
+					column: 5,
+					endColumn: 21,
+				},
+			],
+		},
+		{
+			code: "let foo = class Name { constructor() { let bar = 'hello'; } }",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 6 },
+			errors: [
+				{
+					messageId: "notInitialized",
+					data: { idName: "foo" },
+					line: 1,
+					endLine: 1,
+					column: 5,
+					endColumn: 21,
+				},
+				{
+					messageId: "notInitialized",
+					data: { idName: "bar" },
+					line: 1,
+					endLine: 1,
+					column: 44,
+					endColumn: 57,
+				},
+			],
+		},
 	],
 });
 
@@ -552,7 +666,29 @@ ruleTesterTypeScript.run("init-declarations", rule, {
 				{
 					column: 5,
 					data: { idName: "arr" },
-					endColumn: 33,
+					endColumn: 30,
+					endLine: 1,
+					line: 1,
+					messageId: "notInitialized",
+				},
+			],
+		},
+		{
+			code: "let arr: string = function () { let foo: string = 'hello'; };",
+			options: ["never"],
+			errors: [
+				{
+					column: 5,
+					data: { idName: "arr" },
+					endColumn: 30,
+					endLine: 1,
+					line: 1,
+					messageId: "notInitialized",
+				},
+				{
+					column: 37,
+					data: { idName: "foo" },
+					endColumn: 58,
 					endLine: 1,
 					line: 1,
 					messageId: "notInitialized",
@@ -569,6 +705,34 @@ ruleTesterTypeScript.run("init-declarations", rule, {
 			`,
 			options: ["never"],
 			errors: [
+				{
+					column: 9,
+					data: { idName: "name1" },
+					endColumn: 32,
+					endLine: 4,
+					line: 4,
+					messageId: "notInitialized",
+				},
+			],
+		},
+		{
+			code: `
+	  let class1 = class NAME {
+		constructor() {
+		  var name1: string = 'hello';
+		}
+	  };
+			`,
+			options: ["never"],
+			errors: [
+				{
+					column: 8,
+					data: { idName: "class1" },
+					endColumn: 27,
+					endLine: 2,
+					line: 2,
+					messageId: "notInitialized",
+				},
 				{
 					column: 9,
 					data: { idName: "name1" },
