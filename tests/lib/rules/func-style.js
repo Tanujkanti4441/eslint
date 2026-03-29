@@ -219,6 +219,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 5,
+					endLine: 1,
+					endColumn: 19,
 				},
 			],
 		},
@@ -229,6 +233,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 5,
+					endLine: 1,
+					endColumn: 16,
 				},
 			],
 		},
@@ -239,6 +247,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 5,
+					endLine: 1,
+					endColumn: 16,
 				},
 			],
 		},
@@ -249,6 +261,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 5,
+					endLine: 1,
+					endColumn: 16,
 				},
 			],
 		},
@@ -258,6 +274,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 1,
+					endLine: 1,
+					endColumn: 13,
 				},
 			],
 		},
@@ -267,6 +287,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 8,
+					endLine: 1,
+					endColumn: 20,
 				},
 			],
 		},
@@ -279,6 +303,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 8,
+					endLine: 1,
+					endColumn: 20,
 				},
 			],
 		},
@@ -291,6 +319,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 8,
+					endLine: 1,
+					endColumn: 20,
 				},
 			],
 		},
@@ -301,6 +333,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 12,
+					endLine: 1,
+					endColumn: 26,
 				},
 			],
 		},
@@ -314,6 +350,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 12,
+					endLine: 1,
+					endColumn: 26,
 				},
 			],
 		},
@@ -327,6 +367,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 12,
+					endLine: 1,
+					endColumn: 26,
 				},
 			],
 		},
@@ -337,6 +381,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 12,
+					endLine: 1,
+					endColumn: 23,
 				},
 			],
 		},
@@ -350,6 +398,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 12,
+					endLine: 1,
+					endColumn: 21,
 				},
 			],
 		},
@@ -363,6 +415,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 12,
+					endLine: 1,
+					endColumn: 21,
 				},
 			],
 		},
@@ -376,6 +432,11 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 1,
+					endLine: 1,
+					endColumn: 13,
+
 				},
 			],
 		},
@@ -389,6 +450,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 5,
+					endLine: 1,
+					endColumn: 19,
 				},
 			],
 		},
@@ -402,6 +467,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 5,
+					endLine: 1,
+					endColumn: 16,
 				},
 			],
 		},
@@ -411,6 +480,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 7,
+					endLine: 1,
+					endColumn: 21,
 				},
 			],
 		},
@@ -420,6 +493,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 5,
+					endLine: 1,
+					endColumn: 16,
 				},
 			],
 		},
@@ -429,6 +506,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 7,
+					endLine: 1,
+					endColumn: 18,
 				},
 			],
 		},
@@ -444,6 +525,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 14,
+					endLine: 1,
+					endColumn: 28,
 				},
 			],
 		},
@@ -459,6 +544,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 14,
+					endLine: 1,
+					endColumn: 25,
 				},
 			],
 		},
@@ -468,6 +557,10 @@ ruleTester.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 10,
+					endLine: 1,
+					endColumn: 22,
 				},
 			],
 		},
@@ -690,6 +783,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 7,
+					endLine: 1,
+					endColumn: 33,
 				},
 			],
 		},
@@ -699,6 +796,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 7,
+					endLine: 1,
+					endColumn: 36,
 				},
 			],
 		},
@@ -708,6 +809,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 7,
+					endLine: 1,
+					endColumn: 36,
 				},
 			],
 		},
@@ -717,6 +822,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 7,
+					endLine: 1,
+					endColumn: 58,
 				},
 			],
 		},
@@ -726,6 +835,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 1,
+					endLine: 1,
+					endColumn: 13,
 				},
 			],
 		},
@@ -735,6 +848,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 8,
+					endLine: 1,
+					endColumn: 20,
 				},
 			],
 		},
@@ -747,6 +864,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 8,
+					endLine: 1,
+					endColumn: 20,
 				},
 			],
 		},
@@ -759,6 +880,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 8,
+					endLine: 1,
+					endColumn: 20,
 				},
 			],
 		},
@@ -768,6 +893,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 14,
+					endLine: 1,
+					endColumn: 40,
 				},
 			],
 		},
@@ -780,6 +909,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 14,
+					endLine: 1,
+					endColumn: 40,
 				},
 			],
 		},
@@ -792,6 +925,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 14,
+					endLine: 1,
+					endColumn: 40,
 				},
 			],
 		},
@@ -801,6 +938,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 14,
+					endLine: 1,
+					endColumn: 43,
 				},
 			],
 		},
@@ -813,6 +954,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 14,
+					endLine: 1,
+					endColumn: 41,
 				},
 			],
 		},
@@ -825,6 +970,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 14,
+					endLine: 1,
+					endColumn: 41,
 				},
 			],
 		},
@@ -837,6 +986,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 1,
+					endLine: 1,
+					endColumn: 13,
 				},
 			],
 		},
@@ -849,6 +1002,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 7,
+					endLine: 1,
+					endColumn: 33,
 				},
 			],
 		},
@@ -861,6 +1018,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "declaration",
+					line: 1,
+					column: 7,
+					endLine: 1,
+					endColumn: 36,
 				},
 			],
 		},
@@ -869,6 +1030,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 5,
+					endLine: 1,
+					endColumn: 16,
 				},
 			],
 		},
@@ -877,6 +1042,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 1,
+					column: 10,
+					endLine: 1,
+					endColumn: 22,
 				},
 			],
 		},
@@ -890,6 +1059,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 4,
+					column: 4,
+					endLine: 4,
+					endColumn: 18,
 				},
 			],
 		},
@@ -903,6 +1076,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 4,
+					column: 11,
+					endLine: 4,
+					endColumn: 25,
 				},
 			],
 		},
@@ -921,6 +1098,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 4,
+					column: 14,
+					endLine: 4,
+					endColumn: 28,
 				},
 			],
 		},
@@ -938,6 +1119,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 6,
+					column: 5,
+					endLine: 6,
+					endColumn: 19,
 				},
 			],
 		},
@@ -956,6 +1141,10 @@ ruleTesterTypeScript.run("func-style", rule, {
 			errors: [
 				{
 					messageId: "expression",
+					line: 7,
+					column: 5,
+					endLine: 7,
+					endColumn: 19,
 				},
 			],
 		},
