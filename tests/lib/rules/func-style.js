@@ -436,7 +436,6 @@ ruleTester.run("func-style", rule, {
 					column: 1,
 					endLine: 1,
 					endColumn: 13,
-
 				},
 			],
 		},
